@@ -9,24 +9,16 @@ public class Jtest {
     hello("user");
     hello("john");
 
-    double len = 5;
-    System.out.println("Square " + len + " = " + area(len));
+    Square s = new Square(5);
+    System.out.println("Square " + s.l + " = " + s.area());
 
-    double a = 3;
-    double b = 4;
-
-    System.out.println("Sauare with side1 " + a + " and side2 " + b + " = " + area(a, b));
+    Rectangle r = new Rectangle(3,4);
+    System.out.println("Sauare with side1 " + r.a + " and side2 " + r.b + " = " + r.area());
   }
 
   public static void hello(String somebody) {
     System.out.println("Hello, " + somebody);
   }
 
-  public static double area(double len) {
-    return len * len;
-  }
 
-  public static double area(double a, double b) {
-    return a * b;
-  }
 }
