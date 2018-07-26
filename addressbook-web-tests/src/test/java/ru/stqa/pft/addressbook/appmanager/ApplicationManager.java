@@ -40,6 +40,9 @@ public class ApplicationManager {
     sessionHelper.login("admin", "secret");
   }
 
+  public WebDriver getWd() {
+    return wd;
+  }
 
   public void stop() {
     wd.quit();

@@ -10,7 +10,7 @@ public class TestBase {
   protected static final ApplicationManager app = new ApplicationManager(BrowserType.FIREFOX);
 
   @BeforeSuite
-  public void setUp() {
+  public void setUp() throws InterruptedException {
     app.init();
   }
 
